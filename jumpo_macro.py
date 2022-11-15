@@ -158,9 +158,9 @@ for market_card in market_cards:
         driver.find_element(By.XPATH, '//*[@id="box0"]/div[2]/div[1]/div/div/form/div[1]/div/p/input').click()  # 체크박스 클릭
         text_box = driver.find_element(By.XPATH, '//*[@id="box0"]/div[2]/div[1]/div/div/form/div[1]/p[1]/textarea')
         text_box.clear()   # text_box에 미리 입력된 내용 비우기
-        text_box.send_keys("안녕하세요.\n점포라인 이하늘 중개사입니다.\n현재 저희 점포라인에 접수된 대표님 매장이 빠른")
-        driver.find_element(By.XPATH, '//*[@id="input02"]').send_keys('2071')   # 전화번호 중간 4자리
-        driver.find_element(By.XPATH, '//*[@id="input03"]').send_keys('9223')   # 전화번호 마지막 4자리
+        text_box.send_keys("안녕하세요.\n점포라인 *** 중개사입니다.\n현재 저희 점포라인에 접수된 대표님 매장이 빠른")
+        driver.find_element(By.XPATH, '//*[@id="input02"]').send_keys('1234')   # 전화번호 중간 4자리
+        driver.find_element(By.XPATH, '//*[@id="input03"]').send_keys('5678')   # 전화번호 마지막 4자리
         time.sleep(1)   # 잘 입력됐는지 체크하기 위한 시간
         
         
